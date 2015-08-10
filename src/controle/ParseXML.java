@@ -39,9 +39,10 @@ public class ParseXML {
 		//populando a lista de filmes com doc...
 		NodeList filmes = doc.getElementsByTagName("film");
 		List<Filme> listaFimes = new ArrayList<Filme>();
-		Filme f = new Filme();
+		
 				
 		for (int i = 0; i < filmes.getLength(); i++) {
+			Filme f = new Filme();
 			Element filmeElemento = (Element) filmes.item(i);
 			f.setIdFilme(new Integer(filmeElemento.getAttribute("id")));
 			f.setNomeFilme(filmeElemento.getTextContent());
@@ -52,6 +53,7 @@ public class ParseXML {
 			f.setDuracao(new Integer(filmeElemento.getAttribute("runtime")));
 			
 			listaFimes.add(f);
+			
 
 		}
 		return listaFimes;
