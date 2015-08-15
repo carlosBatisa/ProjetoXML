@@ -2,6 +2,8 @@ package view;
 
 import java.util.Set;
 
+import javax.swing.JFrame;
+
 import controle.ComponeteTela;
 
 public class JanelaPrincipal extends javax.swing.JFrame {
@@ -233,7 +235,10 @@ public class JanelaPrincipal extends javax.swing.JFrame {
 
 		java.awt.EventQueue.invokeLater(new Runnable() {
 			public void run() {
-				new JanelaPrincipal().setVisible(true);
+				JanelaPrincipal tela = new JanelaPrincipal();
+				tela.setSize(800,400);
+				tela.setVisible(true);
+				
 
 			}
 		});
