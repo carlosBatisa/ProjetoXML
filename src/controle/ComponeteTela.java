@@ -53,7 +53,7 @@ public class ComponeteTela {
 		JTable table = new ComponeteTela().tabelaVazia();
 		DefaultTableModel valor = (DefaultTableModel) table.getModel();
 
-		if (filtro == null) {
+		if (filtro == null||filtro.equalsIgnoreCase("Selecione uma Opção")) {
 			table = TabelaCheia();
 			return table;
 		}
