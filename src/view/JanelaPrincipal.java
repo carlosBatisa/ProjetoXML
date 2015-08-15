@@ -238,8 +238,8 @@ public class JanelaPrincipal extends javax.swing.JFrame {
 				JanelaPrincipal tela = new JanelaPrincipal();
 				tela.setSize(800,400);
 				tela.setVisible(true);
+				tela.setResizable(false);
 				
-
 			}
 		});
 	}
