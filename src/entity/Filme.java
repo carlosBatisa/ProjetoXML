@@ -6,17 +6,17 @@ public class Filme {
 	private String nomeFilme;
 	private String genero;
 	private String classificacaoEtaria;
-	private Boolean exibicao3D;
+	private String exibicao3D;
 	private Integer duracao;
 	
 	public Filme(Integer idFilme, String nomeFilme, String genero,
-			String classificacaEtaria, Boolean exibicao3d, Integer duracao) {
+			String classificacaEtaria, String exibicao3d, Integer duracao) {
 		super();
 		this.idFilme = idFilme;
 		this.nomeFilme = nomeFilme;
 		this.genero = genero;
 		this.classificacaoEtaria = classificacaEtaria;
-		exibicao3D = exibicao3d;
+		this.exibicao3D = exibicao3d;
 		this.duracao = duracao;
 	}
 	public Filme() {
@@ -46,10 +46,10 @@ public class Filme {
 	public void setClassificacaoEtaria(String classificacaEtaria) {
 		this.classificacaoEtaria = classificacaEtaria;
 	}
-	public Boolean getExibicao3D() {
+	public String getExibicao3D() {
 		return exibicao3D;
 	}
-	public void setExibicao3D(Boolean exibicao3d) {
+	public void setExibicao3D(String exibicao3d) {
 		exibicao3D = exibicao3d;
 	}
 	public Integer getDuracao() {

@@ -49,7 +49,8 @@ public class ParseXML {
 			f.setGenero(filmeElemento.getAttribute("genre"));
 			f.setClassificacaoEtaria(filmeElemento
 					.getAttribute("parent-guide-rating"));
-			f.setExibicao3D(new Boolean(filmeElemento.getAttribute("media-3d")));
+			String is3d=filmeElemento.getAttribute("media-3d").equalsIgnoreCase("true")?"Sim":"Não";
+			f.setExibicao3D(is3d);
 			f.setDuracao(new Integer(filmeElemento.getAttribute("runtime")));
 			
 			listaFimes.add(f);
